@@ -14,6 +14,9 @@ interface Schema extends Joi.ArraySchema {
 export const Validator: Schema = Joi.extend([
   {
     name: 'object',
+    language: {
+      email: "error: "
+    },
     base: Joi.object().keys({
       id: Joi.number().required(),
       name: Joi.string().required(),
@@ -27,7 +30,7 @@ export const Validator: Schema = Joi.extend([
           if (!regex.test(String(value.email).toLowerCase())) {
             return this.createError(
               "object.email",
-              { v: value, e: value.email },
+              {},
               state,
               options
             )
