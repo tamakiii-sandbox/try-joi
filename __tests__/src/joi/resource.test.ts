@@ -11,6 +11,28 @@ describe('Single resource', () => {
   })
 })
 
+describe('Single resource has email', () => {
+  const schema = Validator.object().email()
+
+  it('should be valid', () => {
+    const data = {id: 1234, name: 'me', email: 'me@example.com' }
+    const actual = Joi.validate(data, schema)
+    assert.equal(actual.error, null)
+  })
+
+  it('should be invalid', () => {
+    const data = {id: 1234, name: 'me', email: '.me@example.com' }
+    const actual = Joi.validate(data, schema)
+    assert.equal(actual.error.details.length, 1)
+  })
+
+  it('should be invalid', () => {
+    const data = {id: 1234, name: 'me', email: '.me@example.com' }
+    const actual = Joi.validate(data, schema)
+    assert.equal(actual.error.details[0].type, "object.email");
+  })
+})
+
 describe('Multiple resources', () => {
   const schema = Joi.array().items(Validator.object())
 
