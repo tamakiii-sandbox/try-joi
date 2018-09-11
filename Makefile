@@ -1,2 +1,3 @@
 run:
-	node --experimental-modules index.mjs
+	yarn tsc --outDir dist src/index.ts
+	node dist/index.js

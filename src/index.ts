@@ -1,4 +1,4 @@
-import Joi from 'joi';
+import * as Joi from 'joi'
 
 const schema = Joi.object().keys({
   username: Joi.string().alphanum().min(3).max(30).required(),
