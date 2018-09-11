@@ -5,5 +5,8 @@
   "repository": "git@github.com:tamakiii-sandbox/try-joi.git",
   "author": "tamakiii <tamakiii@users.noreply.github.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "joi": "^13.6.0"
+  }
 }
