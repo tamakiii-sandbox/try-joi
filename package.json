@@ -13,6 +13,7 @@
     "@types/jest": "^23.3.2",
     "@types/joi": "^13.4.4",
     "jest": "^23.6.0",
+    "source-map": "^0.7.3",
     "ts-jest": "^23.1.4",
     "typescript": "^3.0.3"
   }
