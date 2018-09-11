@@ -8,5 +8,8 @@
   "private": true,
   "dependencies": {
     "joi": "^13.6.0"
+  },
+  "devDependencies": {
+    "typescript": "^3.0.3"
   }
 }
