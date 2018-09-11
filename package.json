@@ -10,7 +10,9 @@
     "joi": "^13.6.0"
   },
   "devDependencies": {
+    "@types/jest": "^23.3.2",
     "@types/joi": "^13.4.4",
+    "jest": "^23.6.0",
     "typescript": "^3.0.3"
   }
 }
