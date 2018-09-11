@@ -10,6 +10,7 @@
     "joi": "^13.6.0"
   },
   "devDependencies": {
+    "@types/core-js": "^2.5.0",
     "@types/jest": "^23.3.2",
     "@types/joi": "^13.4.4",
     "jest": "^23.6.0",
