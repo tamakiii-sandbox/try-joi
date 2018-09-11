@@ -12,7 +12,7 @@ module.exports = {
     './src'
   ],
   'testMatch': [
-    '**/*.ts',
+    '**/*.test.ts',
   ]
 };
 
