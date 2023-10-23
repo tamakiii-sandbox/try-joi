@@ -1,0 +1,22 @@
+{
+  "name": "try-joi",
+  "version": "0.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:tamakiii-sandbox/try-joi.git",
+  "author": "tamakiii <tamakiii@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "joi": "^13.6.0"
+  },
+  "devDependencies": {
+    "@types/core-js": "^2.5.0",
+    "@types/jest": "^23.3.2",
+    "@types/joi": "^13.4.4",
+    "jest": "^23.6.0",
+    "power-assert": "^1.6.1",
+    "source-map": "^0.7.3",
+    "ts-jest": "^23.1.4",
+    "typescript": "^3.0.3"
+  }
+}
